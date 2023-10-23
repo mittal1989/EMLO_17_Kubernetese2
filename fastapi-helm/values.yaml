@@ -1,0 +1,21 @@
+namespace: default
+
+appName:
+  model: 'model-serve'
+  web: 'web-serve'
+
+model: "gpt2"
+
+configMap:
+  modelServer: "model-config-v1.0"
+  redis: "redis-config-v1.0"
+
+secretKey:
+  redis: "redis-secret-v1.0"
+
+image:
+  modelServer: "model-server:latest"
+  webServer: "web-server:latest"
+  redis: "redis:7.2.1"
+
+hostname: "fastapi.localhost"

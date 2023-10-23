@@ -1,0 +1,4 @@
+fastapi[all]==0.98.0
+redis==5.0.0
+httpx==0.25.0
+requests
