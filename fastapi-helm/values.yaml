@@ -18,4 +18,15 @@ image:
   webServer: "web-server:latest"
   redis: "redis:7.2.1"
 
+port:
+  modelServer: 9000
+  webServer: 8000
+  redis: 6379
+
+storage:
+  redisPVC_capacity : 10Gi
+  redisPVC_request : "5Gi"
+
 hostname: "fastapi.localhost"
+
+db_password: cmVhbGx5ZGlmZmljdWx0cGFzc3dvcmQ=

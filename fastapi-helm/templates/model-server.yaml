@@ -22,7 +22,7 @@ spec:
             memory: "2000Mi"
             cpu: "500m"
         ports:
-        - containerPort: 9000
+        - containerPort: {{ .Values.port.modelServer }}
         env:
           - name: REDIS_HOST
             valueFrom:
@@ -56,5 +56,5 @@ spec:
   selector:
     app: {{ .Values.appName.model }}
   ports:
-  - port: 9000
-    targetPort: 9000
+  - port: {{ .Values.port.modelServer }}
+    targetPort: {{ .Values.port.modelServer }}

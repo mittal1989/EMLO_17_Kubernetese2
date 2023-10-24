@@ -7,7 +7,7 @@ spec:
     - ReadWriteOnce
   storageClassName: local-storage
   capacity:
-    storage: 10Gi
+    storage: {{ .Values.storage.redisPVC_capacity }}
   hostPath:
     path: /data/redis-pv/
 ---
@@ -23,4 +23,4 @@ spec:
   volumeName: redis-pv
   resources:
     requests:
-      storage: "5Gi"
+      storage: {{ .Values.storage.redisPVC_request }}
