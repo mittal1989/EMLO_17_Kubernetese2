@@ -64,10 +64,10 @@ kubectl get all
 # Check the helm release 
 helm ls --all-namespaces
 ```
-![Screenshot](Images\get_all.JPG)
+![Screenshot](Images/get_all.JPG)
 
 - Access the FastAPI docs page: `http://fastapi.localhost/docs`
-![Screenshot](Images\fastapi_inference.JPG)
+![Screenshot](Images/fastapi_inference.JPG)
 
 
 ---------------------------------------------------------
@@ -91,44 +91,44 @@ minikube service web-server-service
 ```
 kubectl describe deployment.apps/model-serve 
 ```
-![Screenshot](Images\deployment_model.JPG)
+![Screenshot](Images/deployment_model.JPG)
 
 - Get details of Web deployment
 ```
 kubectl describe deployment.apps/web-serve 
 ```
-![Screenshot](Images\deployment_web.JPG)
+![Screenshot](Images/deployment_web.JPG)
 
 - Get details of the model Pod
 ```
 kubectl describe pod/pod/model-serve-5fcf896dfd-8zbnv
 ```
-![Screenshot](Images\pod_model.JPG)
+![Screenshot](Images/pod_model.JPG)
 
 - Get details of the Web Pod
 ```
 kubectl describe pod/pod/pod/web-serve-75c44f7578-bk2c5 
 ```
-![Screenshot](Images\pod_web.JPG)
+![Screenshot](Images/pod_web.JPG)
 
 
 - Get details of the ingress
 ```
 kubectl describe incress clip-ingress
 ```
-![Screenshot](Images\ingress.JPG)
+![Screenshot](Images/ingress.JPG)
 
 - Check for CPU and Memory usage by each pod
 ```
 kubectl top pod
 ```
-![Screenshot](Images\top_pod.JPG)
+![Screenshot](Images/top_pod.JPG)
 
 - Check details of node(s)
 ```
 kubectl top node
 ```
-![Screenshot](Images\top_node.JPG)
+![Screenshot](Images/top_node.JPG)
 
 - Get details of all yaml configuration
 ```
@@ -136,7 +136,7 @@ kubectl get all -A -o yaml
 ```
 
 
-![Screenshot](Images\kubernetes2.JPG)
+![Screenshot](Images/kubernetes2.JPG)
 
 ## Group Members
 - Anurag Mittal
