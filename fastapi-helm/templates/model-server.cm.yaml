@@ -5,4 +5,4 @@ metadata:
     namespace: {{ .Values.namespace }}
 data:
     model_server_url: "http://{{ .Values.appName.model }}:9000"
-    timm_model: {{ .Values.model }}
+    gpt2_model: {{ .Values.model }}

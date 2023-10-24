@@ -37,13 +37,13 @@ spec:
           - name: REDIS_PASSWORD
             valueFrom:
               secretKeyRef:
-                  name:  {{ .Values.secretKey.redis }}
+                  name: {{ .Values.secretKey.redis }}
                   key: db_password
           - name: GPT2_MODEL
             valueFrom:
               configMapKeyRef:
                 name: {{ .Values.configMap.modelServer }}
-                key: gpt_model
+                key: gpt2_model
 
 
 ---
@@ -51,11 +51,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-    name: {{ .Values.appName.model }}
-    namespace: {{ .Values.namespace }}
+  name: {{ .Values.appName.model }}
 spec:
-    selector:
-        app: {{ .Values.appName.model }}
-    ports:
-        - port: 9000
-          targetPort: 9000
+  selector:
+    app: {{ .Values.appName.model }}
+  ports:
+  - port: 9000
+    targetPort: 9000
