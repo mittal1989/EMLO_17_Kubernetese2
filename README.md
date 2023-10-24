@@ -136,7 +136,7 @@ kubectl get all -A -o yaml
 ```
 
 
-![Screenshot](Images/kubernetes2.jpg)
+![Screenshot](Images/Kubernetes2.jpg)
 
 ## Group Members
 - Anurag Mittal
