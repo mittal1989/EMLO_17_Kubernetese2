@@ -116,7 +116,7 @@ kubectl describe pod/pod/pod/web-serve-75c44f7578-bk2c5
 ```
 kubectl describe incress clip-ingress
 ```
-![Screenshot](Images/ingress.JPG)
+![Screenshot](Images/Ingress.JPG)
 
 - Check for CPU and Memory usage by each pod
 ```
@@ -136,7 +136,7 @@ kubectl get all -A -o yaml
 ```
 
 
-![Screenshot](Images/kubernetes2.JPG)
+![Screenshot](Images/kubernetes2.jpg)
 
 ## Group Members
 - Anurag Mittal
